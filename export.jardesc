@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="WINDOWS-1252" standalone="no"?>
+<jardesc>
+    <jar path="E:/Minecraft Servers/Spigot Servers/Siege/plugins/Siege.jar"/>
+    <options buildIfNeeded="true" compress="true" descriptionLocation="/MinecraftSiegePlugin/export.jardesc" exportErrors="true" exportWarnings="true" includeDirectoryEntries="false" overwrite="true" saveDescription="true" storeRefactorings="false" useSourceFolders="false"/>
+    <storedRefactorings deprecationInfo="true" structuralOnly="false"/>
+    <selectedProjects/>
+    <manifest generateManifest="true" manifestLocation="" manifestVersion="1.0" reuseManifest="false" saveManifest="false" usesManifest="true">
+        <sealing sealJar="false">
+            <packagesToSeal/>
+            <packagesToUnSeal/>
+        </sealing>
+    </manifest>
+    <selectedElements exportClassFiles="true" exportJavaFiles="true" exportOutputFolder="false">
+        <file path="/MinecraftSiegePlugin/config.yml"/>
+        <javaElement handleIdentifier="=MinecraftSiegePlugin/src"/>
+        <javaElement handleIdentifier="=MinecraftSiegePlugin/resources"/>
+        <file path="/MinecraftSiegePlugin/.classpath"/>
+        <file path="/MinecraftSiegePlugin/export.jardesc"/>
+        <file path="/MinecraftSiegePlugin/.project"/>
+        <file path="/MinecraftSiegePlugin/plugin.yml"/>
+    </selectedElements>
+</jardesc>

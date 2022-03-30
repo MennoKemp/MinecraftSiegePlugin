@@ -1,0 +1,376 @@
+capture-points:
+capture-conditions:
+  Village:
+  Walls: Village
+  GreatHall: Walls
+  Dungeon: Walls
+  Garden: Walls
+  Throne: GreatHall Dungeon Garden
+classes:
+  warrior:
+    name: Warrior
+    description:
+      - Tank
+      - Strong vs Damage
+      - Weak vs Support
+    selector: DIAMOND_AXE
+    side: Attackers
+    health: 15
+    effects:
+      - SLOW,0
+    equipment:
+      head:
+        item: CHAINMAIL_HELMET
+        enchantments:
+          - binding_curse,1
+          - unbreaking,10
+      chest:
+        item: CHAINMAIL_CHESTPLATE
+        enchantments:
+          - binding_curse,1
+          - unbreaking,10
+      legs:
+        item: CHAINMAIL_LEGGINGS
+        enchantments:
+          - binding_curse,1
+          - unbreaking,10
+      feet:
+        item: CHAINMAIL_BOOTS
+        enchantments:
+          - binding_curse,1
+          - unbreaking,10
+          - feather_falling,10
+      hand:
+        item: DIAMOND_AXE
+        enchantments:
+          - unbreaking,10
+      off_hand:
+        item: SHIELD
+        color: RED
+  mage:
+    name: Mage
+    description:
+      - Support
+      - Strong vs Tank
+      - Weak vs Damage
+    selector: SPLASH_POTION
+    side: Attackers
+    health: 10
+    mana: 20
+    refill_rate: 4
+    equipment:
+      head:
+        item: LEATHER_HELMET
+        enchantments:
+          - binding_curse,1
+          - unbreaking,10
+      chest:
+        item: LEATHER_CHESTPLATE
+        enchantments:
+          - binding_curse,1
+          - unbreaking,10
+      legs:
+        item: LEATHER_LEGGINGS
+        enchantments:
+          - binding_curse,1
+          - unbreaking,10
+      feet:
+        item: LEATHER_BOOTS
+        enchantments:
+          - binding_curse,1
+          - unbreaking,10
+          - frost_walker,1
+      hand:
+        item: STICK
+        name: Wand
+        enchantments:
+          - sharpness,5
+    spells:
+      hotbar1:
+        effect: HARM
+        name: Damage
+        description: Inflicts 3♥ of damage
+        color: 255,0,255
+        cost: 2
+        cooldown: 5
+      hotbar2:
+        effect: WITHER
+        level: 1
+        duration: 10
+        name: Wither
+        description: Inflicts 6♥ over 10s
+        color: 255,0,0
+        cost: 5
+        cooldown: 10
+      hotbar3:
+        effect: WEAKNESS
+        duration: 13
+        name: Weakness
+        description: Causes weakness for 13s
+        color: 0,0,255
+        cost: 1
+        cooldown: 2
+      hotbar4:
+        effect: ABSORPTION
+        level: 2
+        duration: 60
+        name: Absorption
+        description: Grants 6♥ absorption for 60s
+        color: 128,255,0
+        cost: 5
+        cooldown: 15
+      hotbar5:
+        effect: BLINDNESS
+        duration: 10
+        name: Blindness
+        description: Blinds for 10s
+        color: 0,0,0
+        cost: 10
+        cooldown: 20
+      hotbar6:
+        effect: INVISIBILITY
+        duration: 30
+        name: Invisibility
+        description: Grants invisibility 30s
+        color: 255,255,255
+        cost: 1
+        cooldown: 5
+  assassin:
+    name: Assassin
+    description:
+      - Damage
+      - Strong vs Support
+      - Weak vs Tank
+    selector: CROSSBOW
+    side: Attackers
+    health: 5
+    effects:
+      - SPEED,0
+    refill_rate: 8
+    equipment:
+      hand:
+        item: NETHERITE_SWORD
+        enchantments:
+          - unbreaking,10
+      off_hand:
+        item: ARROW
+        count: 32
+    inventory:
+      hotbar1:
+        item: CROSSBOW
+        enchantments:
+          - unbreaking,10
+          - quick_charge,1
+      hotbar2:
+        item: CROSSBOW
+        enchantments:
+          - unbreaking,10
+          - quick_charge,1
+      hotbar3:
+        item: CROSSBOW
+        enchantments:
+          - unbreaking,10
+          - quick_charge,1
+      hotbar4:
+        item: CROSSBOW
+        enchantments:
+          - unbreaking,10
+          - quick_charge,1
+      hotbar5:
+        item: CROSSBOW
+        enchantments:
+          - unbreaking,10
+          - quick_charge,1
+  knight:
+    name: Knight
+    description:
+      - Tank
+      - Strong vs Damage
+      - Weak vs Support
+    selector: IRON_SWORD
+    side: Defenders
+    health: 20
+    effects:
+      - SLOW,0
+    equipment:
+      head:
+        item: IRON_HELMET
+        enchantments:
+          - binding_curse,1
+          - unbreaking,10
+      chest:
+        item: IRON_CHESTPLATE
+        enchantments:
+          - binding_curse,1
+          - unbreaking,10
+      legs:
+        item: IRON_LEGGINGS
+        enchantments:
+          - binding_curse,1
+          - unbreaking,10
+      feet:
+        item: IRON_BOOTS
+        enchantments:
+          - binding_curse,1
+          - unbreaking,10
+          - feather_falling,10
+      hand:
+        item: IRON_SWORD
+        enchantments:
+          - unbreaking,10
+      off_hand:
+        item: SHIELD
+        color: BLUE
+  healer:
+    name: Healer
+    description:
+      - Support
+      - Strong vs Tank
+      - Weak vs Damage
+    selector: POTION
+    side: Defenders
+    health: 10
+    equipment:
+      head:
+        item: LEATHER_HELMET
+        enchantments:
+          - binding_curse,1
+          - unbreaking,10
+      chest:
+        item: LEATHER_CHESTPLATE
+        enchantments:
+          - binding_curse,1
+          - unbreaking,10
+      legs:
+        item: LEATHER_LEGGINGS
+        enchantments:
+          - binding_curse,1
+          - unbreaking,10
+      feet:
+        item: LEATHER_BOOTS
+        enchantments:
+          - binding_curse,1
+          - unbreaking,10
+          - frost_walker,1
+      hand:
+        item: STICK
+        name: Wand
+        enchantments:
+          - sharpness,5
+    mana: 20
+    refill_rate: 4
+    spells:
+      hotbar1:
+        effect: HEAL
+        level: 1
+        name: Healing
+        description: Heals 4♥
+        color: 255,0,0
+        cost: 2
+        cooldown: 5
+      hotbar2:
+        effect: REGENERATION
+        level: 1
+        duration: 10
+        name: Regeneration
+        description: Regenerates 4♥ over 10s
+        color: 255,0,255
+        cost: 1
+        cooldown: 2
+      hotbar3:
+        effect: POISON
+        duration: 13
+        name: Poison
+        description: Inflicts 5♥ over 13s
+        color: 0,255,0
+        cost: 1
+        cooldown: 2
+      hotbar4:
+        effect: DAMAGE_RESISTANCE
+        duration: 30
+        name: Resistance
+        description: Grants resistance for 30s
+        color: 255,255,255
+        cost: 5
+        cooldown: 15
+      hotbar5:
+        effect: INCREASE_DAMAGE
+        duration: 30
+        name: Strength
+        description: Grants strength for 30s
+        color: 0,0,255
+        cost: 10
+        cooldown: 20
+      hotbar6:
+        effect: NIGHT_VISION
+        duration: 60
+        name: Night vision
+        description: Grants night vision for 60s
+        color: 0,0,0
+        cost: 1
+        cooldown: 5
+  archer:
+    name: Archer
+    description:
+      - Damage
+      - Strong vs Support
+      - Weak vs Tank
+    selector: BOW
+    side: Defenders
+    health: 5
+    effects:
+      - SPEED,0
+    refill_rate: 8
+    equipment:
+      hand:
+        item: WOODEN_SWORD
+        enchantments:
+          - unbreaking,10
+          - punch,10
+      off_hand:
+        item: SPECTRAL_ARROW
+        count: 32
+    inventory:
+      hotbar1:
+        item: BOW
+        enchantments:
+          - unbreaking,10
+          - punch,1
+messages:
+  capturing_dungeon: Capturing Dungeon!
+  capturing_garden: Capturing Garden!
+  capturing_greathhall: Capturing Great Hall!
+  capturing_throne: Capturing Throne!
+  capturing_village: Capturing Village!
+  capturing_walls: Capturing Walls!
+  captured_dungeon: Dungeon Captured	
+  captured_garden: Garden Captured	
+  captured_greathhall: Great Hall Captured	
+  captured_lowerhkeeph_attackers: Lower keep captured	Take the throne!
+  captured_lowerhkeep_defenders: Lower keep captured	Protect the throne!
+  captured_throne: Throne Captured
+  captured_village_attackers: Village Captured	Storm the walls!
+  captured_village_defenders: Village Captured	Defend the walls!
+  captured_walls_attackers: Walls Captured	Capture the lower keep!
+  captured_walls_defenders: Walls Captured	Retreat to the keep!
+  death_block_explosion: got blown to pieces by
+  death_custom: chose the easy way out
+  death_drowning: forgot how to swim
+  death_entity_attack: was slain by
+  death_entity_explosion: got blown to pieces by
+  death_entity_sweep_attack: got sliced up by 
+  death_fall: hit the ground too hard
+  death_fire: burned to death
+  death_fire_tick: burned to death
+  death_fly_into_wall: flew into a wall
+  death_lava: tried to swim in lava
+  death_magic: got vaporized by
+  death_poison: got poisoned by
+  death_projectile: got shot by
+  death_suicide: chose the easy way out
+  death_thorns: was killed trying to hurt
+  death_unknown: died mysteriously
+  gamestarting_attackers: Siege the castle	Raze the village!
+  gamestarting_defenders: Guard the castle	Save the village!
+  gamewon: Game over	Victory!
+  gamelost: Game over	Defeat!

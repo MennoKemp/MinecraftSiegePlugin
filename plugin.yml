@@ -1,0 +1,51 @@
+name: SiegePlugin
+main: com.github.mennokemp.minecraft.siegeplugin.SiegePlugin
+version: 1.0
+api-version: 1.18
+depend: [PluginHelpers]
+
+commands:
+   ReloadConfig:
+      description: Reloads the configuration.
+      usage: /<command>
+      permission: siege.admin
+   StartCapture:
+      description: Starts the capture of a point.
+      usage: /<command> <Point>
+      permission: siege.admin
+   StopCapture:
+      description: Stops the capture of a point.
+      usage: /<command> <Point>
+      permission: siege.admin
+   PrepareGame:
+      description: Prepares the game.
+      usage: /<command>
+      permission: siege.admin
+   ResetGame:
+      description: Resets the game.
+      usage: /<command>
+      permission: siege.admin
+   StartGame:
+      description: Starts the game.
+      usage: /<command>
+      permission: siege.admin
+   StopGame:
+      description: Stops the game.
+      usage: /<command>
+      permission: siege.admin
+   RandomizeTeams:
+      description: Randomises teams.
+      usage: /<command> [FavoredTeam]
+      permission: siege.admin
+   SpawnPlayer:
+      description: Spawn a player with the given class or in the class selection area when not specified.
+      usage: /<command> [PlayerClass]
+      permission: siege.admin
+   RefillPlayer:
+      description: Refills the gear of the player.
+      usage: /<command>
+      permission: siege.admin
+   
+permissions:
+   siege.admin:
+      default: op

@@ -1,0 +1,6 @@
+Village	
+Walls	Village
+GreatHall	Walls
+Dungeon	Walls
+Garden	Walls
+Throne	GreatHall	Dungeon	Garden
