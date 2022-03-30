@@ -1,4 +1,0 @@
-Health	5
-Speed	1.2
-Offhand	SHIELD
-Hotbar0	NETHERITE_SWORD	DURABILITY 3
